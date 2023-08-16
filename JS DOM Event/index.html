@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- daisy ui -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- manrope google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <!-- tailwind css -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- font aweosome link -->
+   <script src="https://kit.fontawesome.com/30f7df5d4c.js" crossorigin="anonymous"></script>
+    <title>Js DOM Event</title>
+</head>
+<body>
+<div class="flex flex-col mt-[100%] md:mt-[50%] lg:mt-[20%]">
+    <h1 class="text-center mt-3 mx-0 px-0 text-3xl md:font-4xl font-bold lg:font-6xl  ">This is dom event class that i try to solve </h1>
+    <div class="flex justify-center my-5">
+        <button onclick="makeblue()" class="btn btn-warning ">Warning</button>
+    </div>
+</div>
+    <script src="./event.js"></script>
+    <script>
+        const makeBodyColorBLue = makeblue;
+        function makeblue(){
+            document.body.style.backgroundColor = 'blue';
+        }
+    </script>
+    
+</body>
+</html>

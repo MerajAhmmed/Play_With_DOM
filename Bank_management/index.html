@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- daisy ui -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- manrope google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <!-- tailwind css -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- font aweosome link -->
+   <script src="https://kit.fontawesome.com/30f7df5d4c.js" crossorigin="anonymous"></script>
+    <title>Bank management</title>
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-6xl text-center mt-6">functional <span class="text-rose-500">Bank Management System!!!</span></h1>
+    </header>
+    <section class="mt-10">
+    <div class="grid grid-cols-3 gap-4 text-white w-3/4 mx-auto md:grid-cols-3 lg:grid-cols-3 ">
+        <div class="bg-orange-700 text-center rounded p-8">
+            <h4 class="text-3xl">Deposite</h4>
+            <h2 class="text-5xl font-medium my-2">$ <span id="deposit-total">00</span></h2>
+        </div>
+        <div class="bg-green-700 text-center rounded p-8">
+            <h4 class="text-3xl">Withdraw</h4>
+            <h2 class="text-5xl font-medium my-2">$ <span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-purple-600 text-center rounded p-8">
+            <h4 class="text-3xl">Balance</h4>
+            <h2 class="text-5xl font-medium my-2">$ <span id="balance-total">1200</span></h2>
+        </div>
+    </div>
+    </section>
+
+    <section class="mt-10 gap-4 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-violet-400 p-8 rounded-lg">
+                <h3 class="text-3xl text-white mb-4">Your Deposite</h3>
+                <input id="deposite-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount you want to deposite">
+                <button id="btn-deposit" class="bg-teal-500 px-6 py-2 text-white rounded font-medium hover:bg-sky-400 mt-4">Deposite</button>
+            </div>
+            <div class="bg-orange-400 p-8 rounded-lg">
+                <h3 class="text-3xl text-white mb-4">Your Withdraw</h3>
+                <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount you want to Withdraw">
+                <button id="btn-withdraw" class="bg-teal-500 px-6 py-2 text-white rounded font-medium hover:bg-sky-400 mt-4">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="./Bank_mangement.js"></script>
+    <script src="./withdraw.js"></script>
+</body>
+</html>
